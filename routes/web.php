@@ -14,4 +14,13 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    Route::get('/createRegistro', function () {
+        return view('createRegistro');
+    })->name('createRegistro');
+    Route::get('/createLocal', function () {
+        return view('createLocal');
+    })->name('createLocal');
+    Route::get('/createColaborador', function () {
+        return view('createColaborador');
+    })->name('createColaborador');
 });
